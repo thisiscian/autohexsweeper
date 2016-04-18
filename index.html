@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
+	<meta content='utf-8' http-equiv='encoding'>
+	<head>
+		<script type='text/javascript' src='hexsweeper/lib/hex/o.js'></script>
+		<script type='text/javascript' src='hexsweeper/lib/hex/context.js'></script>
+		<script type='text/javascript' src='hexsweeper/lib/hex/hexcontext.js'></script>
+		<script type='text/javascript' src='hexsweeper/lib/hex/game.js'></script>
+		<script type='text/javascript' src='hexsweeper/lib/hexsweeper.js'></script>
+		<script type='text/javascript' src='lib/autoclick.js'></script>
+	</head>
+	<body>
+		<script text='text/javascript'>
+			var hexsweeper=new Hexsweeper();
+			hexsweeper.start();
+			x=-1;
+			y=-1;
+			guns=window.setInterval(function() { 
+				step_solver(hexsweeper);
+			}, 100);
+		</script>
+	</body>
+</html>
