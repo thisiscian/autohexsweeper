@@ -14,6 +14,9 @@
 		<script text='text/javascript'>
 			var hexsweeper=new Hexsweeper({
 				radius:50,
+				doRenderGrid:false,
+				doRenderUI:false,
+				rescale:1,
 			});
 			hexsweeper.start();
 			guns=window.setInterval(function() { step_solver(hexsweeper); }, 10);
