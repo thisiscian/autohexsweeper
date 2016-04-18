@@ -12,13 +12,11 @@
 	</head>
 	<body>
 		<script text='text/javascript'>
-			var hexsweeper=new Hexsweeper();
+			var hexsweeper=new Hexsweeper({
+				radius:50,
+			});
 			hexsweeper.start();
-			x=-1;
-			y=-1;
-			guns=window.setInterval(function() { 
-				step_solver(hexsweeper);
-			}, 100);
+			guns=window.setInterval(function() { step_solver(hexsweeper); }, 10);
 		</script>
 	</body>
 </html>
